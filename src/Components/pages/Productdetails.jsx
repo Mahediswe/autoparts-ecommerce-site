@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-import ProductDetail from '../Shop/ProductDetail'
+import ProductDetails from '../Shop/ProductDetails'
 const Productdetails = () => {
   return (
     <div>
       <Navbar/>
-      <ProductDetail/>
+      <ProductDetails/>
       <Footer/>
     </div>
   )

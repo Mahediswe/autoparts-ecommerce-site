@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import m1 from '../assets/m1.jpg';
 import m2 from '../assets/m2.jpg';
 import m3 from '../assets/m3.jpg';
@@ -22,14 +23,18 @@ const Menu = () => {
     <div className="max-w-7xl mx-auto px-4 py-10">
       <div className="flex flex-wrap gap-10 justify-center items-center">
         {Data.map((item) => (
-          <div key={item.id} className="flex flex-col items-center space-y-3">
+          <Link
+            to={`/shop?category=${encodeURIComponent(item.title)}`}
+            key={item.id}
+            className="flex flex-col items-center space-y-3"
+          >
             <img
               src={item.img}
               alt={item.title}
               className="w-32 h-32 rounded-full object-cover border-2 border-gray-300 hover:scale-105 transition-transform duration-300"
             />
             <h3 className="text-gray-700 font-semibold text-center text-sm md:text-base">{item.title}</h3>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -11,8 +11,7 @@ import BlogSection from "./BlogSection ";
 import PopularProducts from "./PopularProducts";
 //import Banner3 from './Banner3'
 import BannerProductCard from "./BannerProductCard";
-import BannerSection from "./BannerSection";
-
+import TripleBanner from "./TripleBanner";
 const Home = () => {
   return (
     <div>
@@ -20,18 +19,13 @@ const Home = () => {
       <Hero />
       <Menu />
       <Banner />
-      <Banner2 />
       <PopularProducts />
+      <Banner2 />
       <BannerProductCard />
       <BlogSection />
+      <TripleBanner />
       <About />
       <Footer />
-
-      <div>
-        <BannerSection title="New Products" />
-        <BannerSection title="Featured Products" />
-        <BannerSection title="Best Sellers" />
-      </div>
     </div>
   );
 };
