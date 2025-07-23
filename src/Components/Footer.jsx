@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Logo & Description */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <img src={logo} alt="Logo" className="w-24 h-24" />
+          <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
           </div>
           <p className="text-sm">
             Your trusted auto parts e-commerce partner. Quality parts, fast
