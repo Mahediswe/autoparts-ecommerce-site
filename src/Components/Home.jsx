@@ -12,6 +12,7 @@ import PopularProducts from "./PopularProducts";
 //import Banner3 from './Banner3'
 import BannerProductCard from "./BannerProductCard";
 import TripleBanner from "./TripleBanner";
+import Banner3 from "./Banner3";
 const Home = () => {
   return (
     <div>
@@ -25,6 +26,7 @@ const Home = () => {
       <BlogSection />
       <TripleBanner />
       <About />
+      <Banner3/>
       <Footer />
     </div>
   );
